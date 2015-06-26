@@ -10,6 +10,6 @@ CLI tool for compressing files using snappy.
 ```
 Usage of snappycli:
   -input-file="": [REQUIRED] the file to be compressed
-  -output-file="": name of the file with the compressed contents - defaults to [input-file].gz
+  -output-file="": name of the file with the compressed contents - defaults to [input-file].snap
 ```
 Note: using the `-h` flag will output this text.

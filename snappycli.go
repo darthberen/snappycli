@@ -19,7 +19,7 @@ var (
 
 func init() {
 	flag.StringVar(&inputFilename, "input-file", "", "[REQUIRED] the file to be compressed")
-	flag.StringVar(&outputFilename, "output-file", "", "name of the file with the compressed contents - defaults to [input-file].gz")
+	flag.StringVar(&outputFilename, "output-file", "", "name of the file with the compressed contents - defaults to [input-file].snap")
 }
 
 func main() {
@@ -50,6 +50,6 @@ func validateFlags() {
 		log.Fatal("you must supply an input file")
 	}
 	if outputFilename == "" {
-		outputFilename = inputFilename + ".gz"
+		outputFilename = inputFilename + ".snap"
 	}
 }
